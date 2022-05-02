@@ -1,0 +1,22 @@
+{
+  "name": "numeros-romanos-dojo",
+  "version": "1.0.0",
+  "description": "Dojo Outedg - Números Romanos",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outedg/numeros-romanos-dojo.git"
+  },
+  "author": "Outedg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/outedg/numeros-romanos-dojo/issues"
+  },
+  "homepage": "https://github.com/outedg/numeros-romanos-dojo#readme"
+}
