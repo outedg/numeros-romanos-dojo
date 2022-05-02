@@ -34,3 +34,11 @@ Exemplo 3:
 Entrada: num = 1994
  Saída: "MCMXCIV"
  Explicação: M = 1000, CM = 900, XC = 90 e IV = 4. */
+
+ /**
+ * @param {number} num
+ * @return {string}
+ */
+var inteiroParaRomano = function(numumero) {
+    
+}
