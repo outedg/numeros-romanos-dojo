@@ -3,7 +3,7 @@
 Os algarismos romanos são representados por sete símbolos diferentes:  I, V, X, L, C, De M.
 
 Valor do símbolo
-eu 1
+I 1
 V 5
 X 10
 L 50
@@ -39,7 +39,18 @@ Entrada: num = 1994
 * @param {number} num
 * @return {string}
 */
-var inteiroParaRomano = function (numumero) {
+var inteiroParaRomano = function (numero) {
+
+    if (numero == 50)
+        return 'L'
+
+    if (numero == 1)
+        return 'I'
+
+    if (numero == 5)
+        return 'V'
+
+    return null
 
 }
 
