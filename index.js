@@ -41,17 +41,21 @@ Entrada: num = 1994
 */
 var inteiroParaRomano = function (numero) {
 
-    if (numero == 50)
-        return 'L'
-
-    if (numero == 1)
-        return 'I'
+    //if (numero == 1)
+    //    return 'I'
+    
 
     if (numero == 5)
         return 'V'
 
-    return null
+    if (numero == 10)
+        return 'X'
 
+    if (numero == 50)
+        return 'L'
+
+
+    return numerosRomanos;
 }
 
 module.exports = { inteiroParaRomano }

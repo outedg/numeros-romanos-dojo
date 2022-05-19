@@ -1,28 +1,37 @@
 const index = require('./index')
 
 test('deve retornar numeral cinquenta em string', () => {
-    var cinquentaEmRomanos = 'L'
-    var cinquentaInteiroMontado = 50
+    const cinquentaEmRomanos = 'L'
+    const cinquentaInteiroMontado = 50
 
-    var cinquentaStringMontado = index.inteiroParaRomano(cinquentaInteiroMontado)
+    var retorno = index.inteiroParaRomano(cinquentaInteiroMontado)
 
-    expect(cinquentaStringMontado).toEqual(cinquentaEmRomanos)
+    expect(retorno).toEqual(cinquentaEmRomanos)
 })
 
-test('deve retornar numeral um em String ', () => {
-    var umEmRomanos = 'I'
-    var umStringMontado = 1
+test('deve retornar numeral um em romanos ', () => {
+    const umEmRomanos = { I: 1 }
+    const umStringMontado = 1
 
-    var umStringMontado = index.inteiroParaRomano(umStringMontado)
+    var retorno = index.inteiroParaRomano(umStringMontado)
 
-    expect(umStringMontado).toEqual(umEmRomanos)
+    expect(retorno).toEqual(umEmRomanos)
 })
 
 test('deve retornar numeral cinco em String ', () => {
-    var cincoEmRomanos = 'V'
-    var cincoStringMontado = 5
+    const cincoEmRomanos = 'V'
+    const cincoStringMontado = 5
+    
+    var retorno = index.inteiroParaRomano(cincoStringMontado)
 
-    var cincoStringMontado = index.inteiroParaRomano(cincoStringMontado)
+    expect(retorno).toEqual(cincoEmRomanos)
+})
 
-    expect(cincoStringMontado).toEqual(cincoEmRomanos)
+test('deve retornar numeral dez em stirng ', () => {
+    const dezEmRomanos = 'X'
+    const dezStringMontado = 10
+
+    var retorno = index.inteiroParaRomano(dezStringMontado)
+
+    expect(retorno).toEqual(dezEmRomanos)
 })
