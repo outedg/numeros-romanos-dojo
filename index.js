@@ -39,11 +39,10 @@ Entrada: num = 1994
 * @param {number} num
 * @return {string}
 */
-var inteiroParaRomano = function (numero) {
+var inteiroParaRomano = function (numero,romanoRetorno) {
 
-    //if (numero == 1)
-    //    return 'I'
-    
+    if (numero == 1)
+        return inteiroParaRomano('I'
 
     if (numero == 5)
         return 'V'
@@ -54,6 +53,14 @@ var inteiroParaRomano = function (numero) {
     if (numero == 50)
         return 'L'
 
+    if(numero == 100)
+        return 'C'
+
+    if(numero == 500)
+        return 'D'
+
+    if(numero == 1000)
+        return 'M'
 
     return numerosRomanos;
 }
